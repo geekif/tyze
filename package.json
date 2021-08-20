@@ -1,0 +1,59 @@
+{
+  "name": "tyze",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.1.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "alpinejs": "^2.8.2",
+    "autoprefixer": "^9.8.6",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.14",
+    "postcss-cli": "^8.3.1",      
+    "proptypes": "^1.1.0",
+    "pure-react-carousel": "^1.27.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-ionicons": "^4.2.0",
+    "react-loading-skeleton": "^2.2.0",
+    "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "tailwindcss": "^2.1.2",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css --watch",
+    "react-scripts:start": "react-scripts start",
+    "start": "run-p watch:css react-scripts:start",
+    "build": "run-s watch:css react-scripts:build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
